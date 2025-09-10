@@ -24,7 +24,7 @@ class DeepSeekService:
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.base_url = "https://openrouter.ai/api/v1"
-        self.model = "deepseek/deepseek-r1:free"
+        self.model = "deepseek/deepseek-r1-distill-llama-70b:free"
         self.last_request_time = 0
         self.min_request_interval = 2  # Minimum 2 seconds between requests
         self.request_lock = threading.Lock()
